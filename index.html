@@ -1,0 +1,64 @@
+<!-- 
+    if you want to work together please email me ilul4530@gmail.com
+
+    my sosial media
+    twiteer @_justalfa
+    instagram @_justalfa
+    
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body class="overflow-x-hidden">
+    <header class="w-full bg-sky-500 fixed">
+        <div class="container">
+            <div class="flex justify-between items-center">
+                <div class="p-4">
+                    <h2 class="font-semibold text-xl md:text-2xl text-white">iLuL</h2>
+                </div>
+                <div class="p-4">
+                    <ul class="absolute right-0 top-0 flex flex-col bg-sky-500 h-screen w-11/12 gap-x-5 items-center justify-evenly -z-10 translate-x-full transition-all duration-500 text-2xl md:flex md:flex-row md:static md:justify-between md:z-10 md:translate-x-0 md:h-auto md:text-base">
+                        <li class="font-semibold text-white"><a href="#" class="block hover:opacity-50">Home</a></li>
+                        <li class="font-semibold text-white"><a href="#" class="block hover:opacity-50">About</a></li>
+                        <li class="font-semibold text-white"><a href="#" class="block hover:opacity-50">Setting</a></li>
+                        <li class="font-semibold text-white"><a href="#" class="block hover:opacity-50">Account</a></li>
+                    </ul>
+                </div>
+                <div class="menu p-4 flex flex-col md:hidden gap-y-2 relative">
+                    <input type="checkbox" name="" id="" class="absolute w-10 h-9 opacity-0 top-[11px] left-[8px] cursor-pointer">
+                    <span class="block w-6 h-1 bg-slate-100 rounded-md"></span>
+                    <span class="block w-6 h-1 bg-slate-100 rounded-md"></span>
+                    <span class="block w-6 h-1 bg-slate-100 rounded-md"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="pt-32 pb-36">
+                <div class="p-8 shadow-md rounded-xl">
+                    <h1 class="font-semibold text-6xl text-sky-500 mb-2">Navbar Responsive</h1>
+                    <p class="font-medium text-slate-500 text-sm mb-4">Dibuat Menggunakan <span class="font-semibold text-sky-500">TailwindCSS</span></p>
+                    <p class="text-base text-slate-600 mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quisquam provident itaque officia. Provident aperiam qui quo amet doloremque ea reprehenderit nihil labore quasi dolore, in blanditiis quos maiores deleniti. Perspiciatis quaerat, reiciendis incidunt, consectetur non ab eaque, deserunt ipsum labore aliquid illo veniam sunt? Natus odio fuga id nemo.</p>
+                    <a href="https://youtube.com/c/ALPHAOS" target="_blank" class="text-base font-semibold bg-sky-500 border-2 border-sky-500 py-3 px-5 text-slate-100 rounded-md hover:opacity-80 transition duration-300 ease-in-out">Click Here</a>
+                    <a href="https://twitter.com/_justalfa" target="_blank" class="text-base font-semibold bg-transparent border-2 border-sky-500 py-3 px-5 text-sky-500 rounded-md hover:opacity-80 transition duration-300 ease-in-out hover:bg-sky-500 hover:text-slate-100">Click Here</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        const menuToggle = document.querySelector(".menu input");
+        const nav = document.querySelector("header ul");
+
+        menuToggle.addEventListener('click', function() {
+            nav.classList.toggle('slide');
+        });
+    </script>
+</body>
+</html>
